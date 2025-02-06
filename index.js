@@ -2,8 +2,13 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 4000;
 
+const obj = {
+    "appid": 216938,
+    "name": "Pieterw test app76 ( 216938 )"
+};
+
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.send(obj);
 });
 
 app.listen(port, () => {
